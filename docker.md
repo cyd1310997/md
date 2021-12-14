@@ -1,4 +1,14 @@
-# [docker.gpu.public](readme.md)  
+# [docker](readme.md)  
+
+
+# 安装docker
+<a href="https://yeasy.gitbook.io/docker_practice/install/ubuntu" target="_blank">Ubuntu - Docker —— 从入门到实践</a>  |  <br>  
+
+<a href="https://bugs.launchpad.net/ubuntu/+source/docker.io/+bug/1830237" target="_blank">Bug #1830237 “docker.io : Depends: containerd (>= 1.2.6-0ubuntu1... : Bugs : docker.io package : Ubuntu</a>  |  <br>  
+
+<a href="https://blog.csdn.net/dou3516/article/details/108314908" target="_blank">[Docker] 错误之Error response from daemon: could not select device driver ““ with capabilities: [[gpu]]_豆芽菜-CSDN博客</a>  |  <br>  
+
+
 
 # 新建容器
 ```
