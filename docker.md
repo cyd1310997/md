@@ -1,7 +1,7 @@
 # [docker](readme.md)  
 
 
-# 安装docker
+# 安装docker  
 <a href="https://yeasy.gitbook.io/docker_practice/install/ubuntu" target="_blank">Ubuntu - Docker —— 从入门到实践</a>  |  <br>  
 
 <a href="https://bugs.launchpad.net/ubuntu/+source/docker.io/+bug/1830237" target="_blank">Bug #1830237 “docker.io : Depends: containerd (>= 1.2.6-0ubuntu1... : Bugs : docker.io package : Ubuntu</a>  |  <br>  
@@ -10,7 +10,7 @@
 
 
 
-# 新建容器
+# 新建容器  
 ```
 docker run -itd -p {real_port}:{container_port} --name {container_name} --restart=always -v {real_location}:{container_location} --gpus device=all --shm-size=32G tensorflow/tensorflow:latest-gpu-py3-jupyter /bin/bash
 
@@ -22,33 +22,33 @@ docker run -itd -p {real_port}:{container_port} --name {container_name} --restar
 
 ```
 
-# 进入容器
+# 进入容器  
 ```
 docker exec -it {container_name / container_id} /bin/bash
 ```
 
-# 启用 ssh
+# 启用 ssh  
 ```
 apt update
 apt install -y sudo vim git openssh-server
 service ssh restart
 ```
 
-# 新建用户
+# 新建用户  
 ```
 useradd -m ubuntu -d /home/ubuntu -s /bin/bash
 echo "ubuntu:1234" | chpasswd
 adduser ubuntu sudo
 ```
 
-# ubuntu换源
+# ubuntu换源  
 ```
 chmod 777 /etc/apt/sources.list
 vim /etc/apt/sources.list
 
 ```
 
-#  阿里源
+# 阿里源  
 
 ```
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
@@ -64,21 +64,21 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted unive
 
 ```
 
-# 安装软件
+# 安装软件  
 ```
 apt update
 apt install -y tmux fzf
 
 ```
 
-# 安装 miniconda
+# 安装 miniconda  
 <a href="https://mirrors.tuna.tsinghua.edu.cn/#" target="_blank">清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a>  |  <br>  
 
-获取 miniconda
+获取 miniconda  
 ```
-右边, 获取下载链接, 应用软件, conda, Miniconda3-py38_4.9.2-Linux-x86_64.sh, 右键, 复制链接地址
+右边, 获取下载链接, 应用软件, conda, Miniconda3-py38_4.9.2-Linux-x86_64.sh, 右键, 复制链接地址  
 
-终端中 输入
+终端中 输入  
 wget {链接地址}
 wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh
 
@@ -86,7 +86,7 @@ bash {文件名}
 bash Miniconda3-py38_4.10.3-Linux-x86_64.sh
 ```
 
-安装 miniconda
+安装 miniconda  
 ```
 1 回车继续
 2 空格阅读条款
@@ -108,15 +108,15 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ```
 
-# 配置pytorch环境
+# 配置pytorch环境  
 
-# 查看已有环境
+# 查看已有环境  
 ```
 conda info -e
 
 ```
 
-# 删除环境
+# 删除环境  
 (如果要删除已有的 pytorch 环境)
 ```
 conda activate base
@@ -124,49 +124,49 @@ conda remove -n pytorch --all
 
 ```
 
-# 新建环境
+# 新建环境  
 (python 3.8) , 命名为 pytorch , 并激活
 ```
 conda create -n pytorch python=3.8
 conda activate pytorch
 ```
 
-# 升级pip等基础包
+# 升级pip等基础包  
 ```
 conda install pip
 pip install --upgrade setuptools
 pip install ipython numpy matplotlib pandas
 ```
 
-# 安装 pytorch
+# 安装 pytorch  
 <a href="https://pytorch.org/get-started/locally/" target="_blank">Start Locally | PyTorch</a>  |  <br>  
 <a href="https://download.pytorch.org/whl/torch_stable.html" target="_blank">https://download.pytorch.org/whl/torch_stable.html</a>  |  <br>  
 
 <a href="https://blog.csdn.net/Boys_Wu/article/details/106623192" target="_blank">pytorch加速下载——清华镜像源(conda或者pip版本)_Boys_Wu的博客-CSDN博客_pytorch清华源下载</a>  |  <br>  
 
-注意: 
-先用 nvdia-smi 看一下 右上角的 cuda 版本 然后到官网选择对应版本的链接  
-删除安装命令最后的 -c pytorch，才会采用清华源安装。  
+注意:   
+先用 nvdia-smi 看一下 右上角的 cuda 版本 然后到官网选择对应版本的链接    
+删除安装命令最后的 -c pytorch，才会采用清华源安装。    
 
-先执行这个安装cuda cudnn 等
+先执行这个安装cuda cudnn 等  
 ```
 conda install pytorch torchvision torchaudio cudatoolkit=10.1
 ```
 
-然后用这个修改torch的版本
-(旧服务器的cuda是10.1的, 最新支持10.1的torch版本是1.7，装pytorch时复制这个命令安装就好)
+然后用这个修改torch的版本  
+(旧服务器的cuda是10.1的, 最新支持10.1的torch版本是1.7，装pytorch时复制这个命令安装就好)  
 ```
 pip install torch==1.7.0+cu101 torchvision==0.8.1+cu101 torchaudio==0.7.0  -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
 
-# 验证是否成功
+# 验证是否成功  
 ```
 ipython
 
 import torch
 torch.cuda.is_available()
 
-# 如果输出“True”，则说明GPU驱动和CUDA可以支持pytorch的加速计算！
-# 恭喜安装成功！
+# 如果输出“True”，则说明GPU驱动和CUDA可以支持pytorch的加速计算！  
+# 恭喜安装成功！  
 ```

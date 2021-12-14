@@ -1,10 +1,17 @@
-
-# linux
+# [linux](readme.md)  
 <a href="https://www.cnblogs.com/klb561/p/9157569.html" target="_blank">linux 查看系统信息命令 - konglingbin - 博客园</a>  |  <br>  
 
 
 ```
-cat /etc/issue
+cat /etc/issue # 查看操作系统版本 
+ip a # 查看网络信息
+lscpu # 查看cpu信息
+lsblk # 查看磁盘信息
+ifconfig # 查看网卡信息
+df -h # 查看磁盘使用情况
+nvcc -V # 查看cuda版本
+nvidia-smi # 查看gpu信息
+
 ```
 
 ```
