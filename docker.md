@@ -41,7 +41,7 @@ echo "ubuntu:1234" | chpasswd
 adduser ubuntu sudo
 ```
 
-# 换源
+# ubuntu换源
 ```
 chmod 777 /etc/apt/sources.list
 vim /etc/apt/sources.list
