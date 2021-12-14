@@ -1,4 +1,4 @@
-[docker.gpu.public](docker.gpu.public.md)  
-[docsify.public](docsify.public.md)  
+[docker](docker.md)  
+[docsify](docsify.md)  
 [readme](readme.md)  
 [_coverpage](_coverpage.md)  
