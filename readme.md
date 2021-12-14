@@ -1,4 +1,6 @@
 [docker](docker.md)  
 [docsify](docsify.md)  
+[linux](linux.md)  
 [readme](readme.md)  
+[ubuntu](ubuntu.md)  
 [_coverpage](_coverpage.md)  
