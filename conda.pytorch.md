@@ -69,5 +69,20 @@ torch.cuda.is_available()
 
 # 如果输出“True”，则说明GPU驱动和CUDA可以支持pytorch的加速计算！    
 # 恭喜安装成功！    
+
+print(torch.cuda.get_device_name(0))
+# NVIDIA A100-PCIE-40GB
+
 ```  
 
+```
+nvidia-smi
+watch -n 2 nvidia-smi
+(watch Ctrl+C 退出)
+```
+
+```
+vim ~/.bashrc
+
+conda activate pytorch
+```
