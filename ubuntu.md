@@ -1,4 +1,4 @@
-# .
+# hi
 # [ubuntu](readme.md)    
 
 # 下载
@@ -7,5 +7,5 @@ ubuntu-18.04.4-live-server-amd64.iso
 
 
 # 配置网络
-[ubuntu.network](ubuntu.network.md#.)
+[ubuntu.network](ubuntu.network.md#hi)
 

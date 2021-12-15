@@ -1,4 +1,4 @@
-# .
+# hi
 # [conda](readme.md)
 
 # 安装 miniconda    

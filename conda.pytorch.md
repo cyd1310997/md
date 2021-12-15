@@ -1,8 +1,8 @@
-# .
+# hi
 # [conda.pytorch](readme.md)
 
 # 安装 miniconda, conda pip 换源
-[conda](conda.md#.)
+[conda](conda.md#hi)
 
 # 配置pytorch环境    
 

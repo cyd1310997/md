@@ -1,4 +1,4 @@
-# .
+# hi
 # [nnn](readme.md)
 
 <a href="https://github.com/jarun/nnn" target="_blank">jarun/nnn: n³ The unorthodox terminal file manager</a>  |  <br>  

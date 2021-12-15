@@ -1,8 +1,8 @@
-# .
+# hi
 # [ubuntu.disk](readme.md)
 
 
-[linux](linux.md#.)
+[linux](linux.md#hi)
 
 
 # Ubuntu 18.04使用GPT分区并挂载硬盘 50T

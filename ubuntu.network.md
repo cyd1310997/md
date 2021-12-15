@@ -1,4 +1,4 @@
-# .
+# hi
 # [ubuntu.network](readme.md)
 
 # 常用命令
