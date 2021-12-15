@@ -3,7 +3,7 @@
 [fzf](fzf.md)  
 [linux](linux.md)  
 [readme](readme.md)  
-[ssh.ssh-keygen](ssh.ssh-keygen.md)  
+[ssh](ssh.md)  
 [tmux](tmux.md)  
 [ubuntu](ubuntu.md)  
 [wsl](wsl.md)  
