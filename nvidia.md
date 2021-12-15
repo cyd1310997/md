@@ -1,3 +1,4 @@
+# .
 # [nvidia](readme.md)    
 
 # 查显卡型号

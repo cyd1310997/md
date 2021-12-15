@@ -1,3 +1,4 @@
+# .
 # [tmux](readme.md)    
 
 
@@ -9,7 +10,7 @@ sudo apt install tmux
 
 # 安装 fzf  
 
-[fzf](fzf.md)  
+[fzf](fzf.md#.)  
 
 
 # 在 .bashrc 中配置  

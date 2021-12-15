@@ -1,7 +1,8 @@
+# .
 # [conda.pytorch](readme.md)
 
 # 安装 miniconda, conda pip 换源
-[conda](conda.md)
+[conda](conda.md#.)
 
 # 配置pytorch环境    
 
@@ -86,3 +87,6 @@ vim ~/.bashrc
 
 conda activate pytorch
 ```
+
+
+

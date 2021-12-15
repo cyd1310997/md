@@ -1,3 +1,4 @@
+# .
 # [linux](readme.md)    
 
 <a href="https://www.cnblogs.com/klb561/p/9157569.html" target="_blank">linux 查看系统信息命令 - konglingbin - 博客园</a>  |  <br>    

@@ -1,3 +1,4 @@
+# .
 
 # [server](readme.md)    
 
@@ -23,7 +24,7 @@ rufus-3.5.exe
 
 
 # 配置网络  
-[ubuntu.network](ubuntu.network.md)
+[ubuntu.network](ubuntu.network.md#.)
 
 # 启用ssh    
 ```  
@@ -45,13 +46,13 @@ sudo apt install -y vim git tmux fzf
 ```
 
 # nvidia
-[nvidia](nvidia.md)    
+[nvidia](nvidia.md#.)    
 禁用 开源显卡驱动 nouveau  
 安装 nvidia 驱动  
 cuda 和 cudnn 不需要安装, 因为docker容器自带cuda和cudnn  
 
 # docker
-[docker](docker.md)  
+[docker](docker.md#.)  
 
 # 挂载硬盘
-[ubuntu.disk](ubuntu.disk.md)
+[ubuntu.disk](ubuntu.disk.md#.)

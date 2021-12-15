@@ -1,3 +1,4 @@
+# .
 # [docker](readme.md)    
 
 
@@ -187,5 +188,5 @@ cp fzf /usr/local/bin
 
 
 # 配置pytorch环境
-[conda.pytorch](conda.pytorch.md)
+[conda.pytorch](conda.pytorch.md#.)
 
