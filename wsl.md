@@ -16,12 +16,14 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 ```  
 
 2.在微软应用商城搜索LINUX或WSL。    
-  
+
 # wsl2    
 
 启用“虚拟机平台”可选组件    
-以 管理员身份 打开 PowerShell 并运行：    
+以 管理员身份 打开 PowerShell 并运行：   
+``` 
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform    
+``` 
 需要 重新启动计算机，这些更改才能更好地生效    
-  
-  
+
+

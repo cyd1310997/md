@@ -1,7 +1,40 @@
 # [linux](readme.md)    
+
 <a href="https://www.cnblogs.com/klb561/p/9157569.html" target="_blank">linux 查看系统信息命令 - konglingbin - 博客园</a>  |  <br>    
-  
-  
+
+<a href="https://www.yisu.com/ask/5490.html" target="_blank">ubuntu如何查看显卡版本号 - 问答 - 亿速云</a>  |  <br>  
+
+<a href="https://www.cnblogs.com/emanlee/p/3587571.html" target="_blank">Linux查看物理CPU个数、核数、逻辑CPU个数 - emanlee - 博客园</a>  |  <br>  
+
+
+# linux版本
+```
+uname -a
+uname -sr
+cat /etc/issue
+lsb_release -a
+
+cat /proc/cpuinfo | grep "physical id" | sort | uniq | wc -l #查看物理CPU个数
+cat /proc/cpuinfo | grep "cpu cores" | uniq #查看CPU核数
+cat /proc/cpuinfo | grep 'model name' |uniq #查看CPU型号
+
+#查看gpu信息
+nvidia-smi #GPU列表信息
+lshw -c video #查看显卡型号
+
+lspci | grep -i nvidia #得到NVIDIA显卡的信息
+
+
+
+sudo dmidecode | less
+ip a
+lscpu
+lsblk
+
+echo $SHELL
+```
+
+
 ```  
 cat /etc/issue # 查看操作系统版本   
 ip a # 查看网络信息  
@@ -11,9 +44,9 @@ ifconfig # 查看网卡信息
 df -h # 查看磁盘使用情况  
 nvcc -V # 查看cuda版本  
 nvidia-smi # 查看gpu信息  
-  
+
 ```  
-  
+
 ```  
 # uname -a # 查看内核/操作系统/CPU信息   
 # head -n 1 /etc/issue # 查看操作系统版本   
@@ -52,6 +85,6 @@ nvidia-smi # 查看gpu信息
 # chkconfig –list # 列出所有系统服务   
 # chkconfig –list | grep on # 列出所有启动的系统服务程序   
 # rpm -qa # 查看所有安装的软件包  
-  
+
 ```  
-  
+

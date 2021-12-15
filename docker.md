@@ -1,55 +1,164 @@
 # [docker](readme.md)    
-  
-  
+
+
 # 安装docker    
+<a href="https://docs.docker.com/engine/install/ubuntu/" target="_blank">Install Docker Engine on Ubuntu | Docker Documentation</a>  |  <br>  
 <a href="https://yeasy.gitbook.io/docker_practice/install/ubuntu" target="_blank">Ubuntu - Docker —— 从入门到实践</a>  |  <br>    
-  
-<a href="https://bugs.launchpad.net/ubuntu/+source/docker.io/+bug/1830237" target="_blank">Bug #1830237 “docker.io : Depends: containerd (>= 1.2.6-0ubuntu1... : Bugs : docker.io package : Ubuntu</a>  |  <br>    
-  
-<a href="https://blog.csdn.net/dou3516/article/details/108314908" target="_blank">[Docker] 错误之Error response from daemon: could not select device driver ““ with capabilities: [[gpu]]_豆芽菜-CSDN博客</a>  |  <br>    
-  
-  
-  
+
+```
+# 卸载旧版本, 旧版本的 Docker 称为 docker 或者 docker-engine，使用以下命令卸载旧版本：
+sudo apt remove docker \
+               docker-engine \
+               docker.io
+```
+```
+# 使用 APT 安装, 由于 apt 源使用 HTTPS 以确保软件下载过程中不被篡改。因此，我们首先需要添加使用 HTTPS 传输的软件包以及 CA 证书。
+sudo apt update
+sudo apt install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+```
+```
+# 为了确认所下载软件包的合法性，需要添加软件源的 GPG 密钥。
+curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+```
+```
+# 然后，我们需要向 sources.list 中添加 Docker 软件源
+echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+```
+# 安装 Docker, 更新 apt 软件包缓存，并安装 docker-ce：
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+```
+```
+# 启动 Docker
+sudo systemctl enable docker
+sudo systemctl start docker
+```
+
+```
+# 建立 docker 用户组:
+sudo groupadd docker
+
+# 将当前用户加入 docker 组：
+sudo usermod -aG docker _username_
+```
+```
+# 退出当前终端并重新登录，进行如下测试。
+docker run --rm hello-world
+```
+
+# docker 使用 cuda
+<a href="https://github.com/NVIDIA/nvidia-docker" target="_blank">NVIDIA/nvidia-docker: Build and run Docker containers leveraging NVIDIA GPUs</a>  |  <br>  
+<a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker" target="_blank">Installation Guide — NVIDIA Cloud Native Technologies documentation</a>  |  <br>  
+<a href="https://blog.csdn.net/weixin_41783910/article/details/109072936" target="_blank">ubuntu18.04安装nvidia-docker备忘_南沙的星星-CSDN博客</a>  |  <br>  
+
+```
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+```
+
+```
+curl -s -L https://nvidia.github.io/nvidia-container-runtime/experimental/$distribution/nvidia-container-runtime.list | sudo tee /etc/apt/sources.list.d/nvidia-container-runtime.list
+```
+```
+sudo apt-get update
+sudo apt-get install -y nvidia-docker2
+```
+```
+sudo systemctl restart docker
+```
+```
+sudo docker run --rm --gpus all nvidia/cuda:11.0-base nvidia-smi
+```
+
+
+
+
+# 修改docker的默认存储位置
+
+<a href="https://zhuanlan.zhihu.com/p/95533274" target="_blank">修改 Docker 的默认存储路径 - 知乎</a>  |  <br>  
+
+<a href="https://blog.csdn.net/BigData_Mining/article/details/104921479" target="_blank">三种方法修改docker的默认存储位置_BigData_Mining的博客-CSDN博客</a>  |  <br>  
+<a href="https://blog.csdn.net/wenwenxiong/article/details/78728696" target="_blank">Docker配置本地镜像与容器的存储位置_wenwenxiong的专栏-CSDN博客_docker配置文件位置</a>  |  <br>  
+
+```
+sudo su
+
+docker ps -a
+
+docker info | grep "Docker Root Dir"
+
+service docker stop
+
+vim /etc/docker/daemon.json
+
+{
+  "data-root": "/data/d/docker"
+}
+
+systemctl restart docker
+
+docker info | grep "Docker Root Dir"
+
+df -h
+df -Th
+df -TH
+
+```
+
+
+
+
 # 新建容器    
 ```  
 docker run -itd -p {real_port}:{container_port} --name {container_name} --restart=always -v {real_location}:{container_location} --gpus device=all --shm-size=32G tensorflow/tensorflow:latest-gpu-py3-jupyter /bin/bash  
-  
+
 -p 10000:22 -p 10001-10010:10001-10010  
 -v /data:/data -v /data2:/data2  
-  
+
 --gpus device=all  
 --gpus='"device=0,1"'  
-  
+
 ```  
-  
+
 # 进入容器    
 ```  
 docker exec -it {container_name / container_id} /bin/bash  
 ```  
-  
+
 # 启用 ssh    
 ```  
 apt update  
 apt install -y sudo vim git openssh-server  
 service ssh restart  
 ```  
-  
+
 # 新建用户    
 ```  
 useradd -m ubuntu -d /home/ubuntu -s /bin/bash  
 echo "ubuntu:1234" | chpasswd  
 adduser ubuntu sudo  
 ```  
-  
+
 # ubuntu换源    
 ```  
 chmod 777 /etc/apt/sources.list  
 vim /etc/apt/sources.list  
-  
+
 ```  
-  
+
 # 阿里源    
-  
+
 ```  
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
 deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
@@ -61,112 +170,22 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted univer
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
-  
+
 ```  
-  
+
 # 安装软件    
 ```  
 apt update  
-apt install -y tmux fzf  
-  
+apt install -y tmux  
+
+wget https://gh.api.99988866.xyz/https://github.com/junegunn/fzf/releases/download/0.28.0/fzf-0.28.0-linux_amd64.tar.gz  
+tar -xzvf fzf-0.28.0-linux_amd64.tar.gz  
+cp fzf /usr/local/bin  
+
+
 ```  
-  
-# 安装 miniconda    
-<a href="https://mirrors.tuna.tsinghua.edu.cn/#" target="_blank">清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a>  |  <br>    
-  
-获取 miniconda    
-```  
-右边, 获取下载链接, 应用软件, conda, Miniconda3-py38_4.9.2-Linux-x86_64.sh, 右键, 复制链接地址    
-  
-终端中 输入    
-wget {链接地址}  
-wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh  
-  
-bash {文件名}  
-bash Miniconda3-py38_4.10.3-Linux-x86_64.sh  
-```  
-  
-安装 miniconda    
-```  
-1 回车继续  
-2 空格阅读条款  
-3 输入 yes 同意条款  
-4 回车接受默认安装位置  
-5 等待安装完成(2分钟)  
-6 输入 yes 同意初始化conda  
-7 退出终端重新进入, 或者 source ~/.bashrc  
-```  
-  
-# conda pip 换源  
-在终端中粘贴下面这些命令, 就可以将conda和pip的源都换成清华源 (已经加入了pytorch的清华源)  
-```  
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/  
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/  
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/  
-conda config --set show_channel_urls yes  
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple  
-  
-```  
-  
-# 配置pytorch环境    
-  
-# 查看已有环境    
-```  
-conda info -e  
-  
-```  
-  
-# 删除环境    
-(如果要删除已有的 pytorch 环境)  
-```  
-conda activate base  
-conda remove -n pytorch --all  
-  
-```  
-  
-# 新建环境    
-(python 3.8) , 命名为 pytorch , 并激活  
-```  
-conda create -n pytorch python=3.8  
-conda activate pytorch  
-```  
-  
-# 升级pip等基础包    
-```  
-conda install pip  
-pip install --upgrade setuptools  
-pip install ipython numpy matplotlib pandas  
-```  
-  
-# 安装 pytorch    
-<a href="https://pytorch.org/get-started/locally/" target="_blank">Start Locally | PyTorch</a>  |  <br>    
-<a href="https://download.pytorch.org/whl/torch_stable.html" target="_blank">https://download.pytorch.org/whl/torch_stable.html</a>  |  <br>    
-  
-<a href="https://blog.csdn.net/Boys_Wu/article/details/106623192" target="_blank">pytorch加速下载——清华镜像源(conda或者pip版本)_Boys_Wu的博客-CSDN博客_pytorch清华源下载</a>  |  <br>    
-  
-注意:     
-先用 nvdia-smi 看一下 右上角的 cuda 版本 然后到官网选择对应版本的链接      
-删除安装命令最后的 -c pytorch，才会采用清华源安装。      
-  
-先执行这个安装cuda cudnn 等    
-```  
-conda install pytorch torchvision torchaudio cudatoolkit=10.1  
-```  
-  
-然后用这个修改torch的版本    
-(旧服务器的cuda是10.1的, 最新支持10.1的torch版本是1.7，装pytorch时复制这个命令安装就好)    
-```  
-pip install torch==1.7.0+cu101 torchvision==0.8.1+cu101 torchaudio==0.7.0  -f https://download.pytorch.org/whl/torch_stable.html  
-```  
-  
-  
-# 验证是否成功    
-```  
-ipython  
-  
-import torch  
-torch.cuda.is_available()  
-  
-# 如果输出“True”，则说明GPU驱动和CUDA可以支持pytorch的加速计算！    
-# 恭喜安装成功！    
-```  
+
+
+# 配置pytorch环境
+[conda.pytorch](conda.pytorch.md)
+
