@@ -4,6 +4,7 @@
 [docsify](docsify.md)  
 [fzf](fzf.md)  
 [linux](linux.md)  
+[linux.user](linux.user.md)  
 [nnn](nnn.md)  
 [nvidia](nvidia.md)  
 [readme](readme.md)  
