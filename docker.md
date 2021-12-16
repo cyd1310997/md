@@ -137,55 +137,8 @@ docker run -itd -p {real_port}:{container_port} --name {container_name} --restar
 docker exec -it {container_name / container_id} /bin/bash  
 ```  
 
-# 启用 ssh    
-```  
-apt update  
-apt install -y sudo vim git openssh-server  
-service ssh restart  
-```  
-
-# 新建用户    
-```  
-useradd -m ubuntu -d /home/ubuntu -s /bin/bash  
-echo "ubuntu:1234" | chpasswd  
-adduser ubuntu sudo  
-```  
-
-# ubuntu换源    
-```  
-chmod 777 /etc/apt/sources.list  
-vim /etc/apt/sources.list  
-
-```  
-
-# 阿里源    
-
-```  
-deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
-deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
-deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
-deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
-deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse  
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse  
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse  
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse  
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse  
-
-```  
-
-# 安装软件    
-```  
-apt update  
-apt install -y tmux  
-
-wget https://gh.api.99988866.xyz/https://github.com/junegunn/fzf/releases/download/0.28.0/fzf-0.28.0-linux_amd64.tar.gz  
-tar -xzvf fzf-0.28.0-linux_amd64.tar.gz  
-cp fzf /usr/local/bin  
-
-
-```  
-
+# ubuntu
+[ubuntu](ubuntu.md#hi)
 
 # 配置pytorch环境
 [conda.pytorch](conda.pytorch.md#hi)

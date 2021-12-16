@@ -1,6 +1,12 @@
 # hi
 # [nvidia](readme.md)    
 
+```
+禁用 开源显卡驱动 nouveau  
+安装 nvidia 驱动  
+cuda 和 cudnn 不需要安装, 因为docker容器自带cuda和cudnn  
+```
+
 # 查显卡型号
 
 ```
