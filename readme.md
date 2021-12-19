@@ -14,6 +14,7 @@
 [ubuntu.disk](ubuntu.disk.md)  
 [ubuntu](ubuntu.md)  
 [ubuntu.network](ubuntu.network.md)  
+[vscode](vscode.md)  
 [wsl](wsl.md)  
 [wt](wt.md)  
 [_coverpage](_coverpage.md)  
