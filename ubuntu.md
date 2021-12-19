@@ -26,6 +26,8 @@ rufus-3.5.exe
 # network
 [ubuntu.network](ubuntu.network.md#hi)
 
+
+
 # ssh    
 ```  
 apt update  
@@ -42,6 +44,9 @@ adduser ubuntu sudo
 
 # apt换源    
 ```  
+lsb_release -a
+# Ubuntu 18.04
+
 chmod 777 /etc/apt/sources.list  
 vim /etc/apt/sources.list  
 
