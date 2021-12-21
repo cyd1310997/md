@@ -3,6 +3,7 @@
 [docker](docker.md)  
 [docsify](docsify.md)  
 [fzf](fzf.md)  
+[latex](latex.md)  
 [linux](linux.md)  
 [linux.user](linux.user.md)  
 [nnn](nnn.md)  
@@ -17,4 +18,5 @@
 [vscode](vscode.md)  
 [wsl](wsl.md)  
 [wt](wt.md)  
+[xshell](xshell.md)  
 [_coverpage](_coverpage.md)  

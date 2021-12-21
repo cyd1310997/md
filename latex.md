@@ -1,5 +1,6 @@
 # [latex](readme.md)
 
+<a href="https://mirrors.tuna.tsinghua.edu.cn/#" target="_blank">清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a>  |  <br>  
 <a href="https://liam.page/2014/09/08/latex-introduction/#TeX-%E5%AE%B6%E6%97%8F" target="_blank">一份其实很短的 LaTeX 入门文档 | 始终</a>  |  <br>  
 <a href="https://www.zhihu.com/question/62943097/answer/203670095" target="_blank">(32 封私信 / 3 条消息) 如何从零开始，入门 LaTeX？ - 知乎</a>  |  <br>  
 <a href="https://jingyan.baidu.com/article/4d58d54116c7c69dd4e9c0bd.html" target="_blank">Latex教程: [10]插入超链接-百度经验</a>  |  <br>  
@@ -13,5 +14,3 @@
 <a href="https://jingyan.baidu.com/article/925f8cb8bce1f0c0dce0564f.html" target="_blank">Latex中嵌入bib参考文件，完整使用bib的方法-百度经验</a>
 <a href="https://www.zhihu.com/question/30344123?sort=created" target="_blank">LaTeX到底怎么加bib？？ - 知乎</a>
 <a href="https://blog.csdn.net/GarfieldEr007/article/details/51619737" target="_blank">LaTeX单栏和双栏设置_GarfieldEr007的专栏-CSDN博客</a>
-
-
