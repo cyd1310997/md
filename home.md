@@ -4,7 +4,6 @@
 [docsify.public](docsify.public.md)  
 [fzf.public](fzf.public.md)  
 [home](home.md)  
-[home.public](home.public.md)  
 [latex.public](latex.public.md)  
 [linux.public](linux.public.md)  
 [linux.user.public](linux.user.public.md)  
