@@ -1,4 +1,4 @@
-# hi
+
 # [conda](home.md)
 
 # 安装 miniconda    

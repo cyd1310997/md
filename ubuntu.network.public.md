@@ -1,4 +1,4 @@
-# hi
+
 # [ubuntu.network](home.md)
 
 # 常用命令

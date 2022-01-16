@@ -3,6 +3,7 @@
 [docker.public](docker.public.md)  
 [docsify.public](docsify.public.md)  
 [fzf.public](fzf.public.md)  
+[home](home.md)  
 [home.public](home.public.md)  
 [latex.public](latex.public.md)  
 [linux.public](linux.public.md)  
@@ -20,4 +21,3 @@
 [wt.public](wt.public.md)  
 [xshell.public](xshell.public.md)  
 [_coverpage](_coverpage.md)  
-[_coverpage.public](_coverpage.public.md)  

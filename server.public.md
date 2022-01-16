@@ -1,4 +1,4 @@
-# hi
+
 # [server](home.md)    
 
 - 挑选并购买硬件
