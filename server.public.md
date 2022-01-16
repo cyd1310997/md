@@ -1,12 +1,13 @@
 
-# [server](home.md)    
+# server.public      
+# [<-](home.md)  
 
 - 挑选并购买硬件
 - 组装并安置电脑
 
-# [ubuntu](ubuntu.md#hi)
+# [ubuntu.public](ubuntu.public.md#ubuntu.public)
 
-# [nvidia](nvidia.md#hi)    
+# [nvidia.public](nvidia.public.md#nvidia.public)    
 
-# [docker](docker.md#hi)  
+# [docker.public](docker.public.md#docker.public)  
 

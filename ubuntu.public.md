@@ -1,5 +1,6 @@
 
-# [ubuntu](home.md)    
+# ubuntu.public    
+# [<-](home.md)  
 
 
 
@@ -24,7 +25,7 @@ rufus-3.5.exe
 
 
 # network
-[ubuntu.network](ubuntu.network.md#hi)
+[ubuntu.network.public](ubuntu.network.public.md#ubuntu.network.public)
 
 
 
@@ -65,6 +66,6 @@ apt update
 ```  
 
 
-# [ubuntu.disk](ubuntu.disk.md#hi)
+# [ubuntu.disk.public](ubuntu.disk.public.md#ubuntu.disk.public)
 
 

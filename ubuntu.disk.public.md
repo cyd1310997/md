@@ -1,8 +1,9 @@
 
-# [ubuntu.disk](home.md)
+# ubuntu.disk.public
+# [<-](home.md)  
 
 
-[linux](linux.md#hi)
+[linux.public](linux.public.md#linux.public)
 
 
 # Ubuntu 18.04使用GPT分区并挂载硬盘

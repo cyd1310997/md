@@ -1,5 +1,6 @@
 
-# [docker](home.md)    
+# docker.public    
+# [<-](home.md)  
 
 
 # 安装docker    
@@ -138,8 +139,8 @@ docker exec -it {container_name / container_id} /bin/bash
 ```  
 
 # ubuntu
-[ubuntu](ubuntu.md#hi)
+[ubuntu.public](ubuntu.public.md#ubuntu.public)
 
 # 配置pytorch环境
-[conda.pytorch](conda.pytorch.md#hi)
+[conda.pytorch.public](conda.pytorch.public.md#conda.pytorch.public)
 

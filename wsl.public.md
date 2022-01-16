@@ -1,5 +1,6 @@
 
-# [wsl](home.md)    
+# wsl.public    
+# [<-](home.md)  
 
 <a href="https://zhuanlan.zhihu.com/p/105652962" target="_blank">WSL（Windows Subsystem for Linux) 安装教程 - 知乎</a>  |  <br>    
 

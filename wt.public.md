@@ -1,7 +1,8 @@
 
 
 
-# [wt](home.md)    
+# wt.public    
+# [<-](home.md)  
 
 
 # 安装  

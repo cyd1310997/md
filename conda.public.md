@@ -1,5 +1,6 @@
 
-# [conda](home.md)
+# conda.public
+# [<-](home.md)  
 
 # 安装 miniconda    
 <a href="https://mirrors.tuna.tsinghua.edu.cn/#" target="_blank">清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a>  |  <br>    

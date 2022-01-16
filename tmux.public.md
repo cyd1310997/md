@@ -1,5 +1,6 @@
 
-# [tmux](home.md)    
+# tmux.public     
+# [<-](home.md)   
 
 
 # 安装 tmux  
@@ -10,7 +11,7 @@ sudo apt install tmux
 
 # 安装 fzf  
 
-[fzf](fzf.md#hi)  
+[fzf.public](fzf.public.md#fzf.public)  
 
 
 # 在 .bashrc 中配置  
