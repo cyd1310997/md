@@ -11,7 +11,7 @@ def generate_navigation_including_all_md():
         i2 = f'[{file_name_without_ext}]({file_name})  '
         L2.append(i2)
         
-    with open('README.md', 'w') as f:
+    with open('home.md', 'w') as f:
         f.write('\n'.join(L2))
 
 

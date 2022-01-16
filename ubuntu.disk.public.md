@@ -1,5 +1,5 @@
 # hi
-# [ubuntu.disk](readme.md)
+# [ubuntu.disk](home.md)
 
 
 [linux](linux.md#hi)

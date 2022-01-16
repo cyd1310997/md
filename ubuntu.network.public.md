@@ -1,5 +1,5 @@
 # hi
-# [ubuntu.network](readme.md)
+# [ubuntu.network](home.md)
 
 # 常用命令
 ```

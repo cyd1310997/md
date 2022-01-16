@@ -8,7 +8,7 @@
 [linux.user](linux.user.md)  
 [nnn](nnn.md)  
 [nvidia](nvidia.md)  
-[readme](readme.md)  
+[home](home.md)  
 [server](server.md)  
 [ssh](ssh.md)  
 [tmux](tmux.md)  

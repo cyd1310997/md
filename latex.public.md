@@ -1,4 +1,4 @@
-# [latex](readme.md)
+# [latex](home.md)
 
 <a href="https://mirrors.tuna.tsinghua.edu.cn/#" target="_blank">清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a>  |  <br>  
 <a href="https://liam.page/2014/09/08/latex-introduction/#TeX-%E5%AE%B6%E6%97%8F" target="_blank">一份其实很短的 LaTeX 入门文档 | 始终</a>  |  <br>  

@@ -1,5 +1,5 @@
 # hi
-# [ubuntu](readme.md)    
+# [ubuntu](home.md)    
 
 
 

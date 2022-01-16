@@ -1,7 +1,7 @@
 
 # hi
 
-# [wt](readme.md)    
+# [wt](home.md)    
 
 
 # 安装  

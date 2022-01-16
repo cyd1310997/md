@@ -1,5 +1,5 @@
 # hi
-# [conda.pytorch](readme.md)
+# [conda.pytorch](home.md)
 
 # 安装 miniconda, conda pip 换源
 [conda](conda.md#hi)

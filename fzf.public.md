@@ -1,5 +1,5 @@
 # hi
-# [fzf](readme.md)    
+# [fzf](home.md)    
 
 # github  
 <a href="https://github.com/junegunn/fzf" target="_blank">junegunn/fzf: A command-line fuzzy finder</a>  |  <br>    

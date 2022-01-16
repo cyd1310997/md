@@ -1,5 +1,5 @@
 # hi
-# [tmux](readme.md)    
+# [tmux](home.md)    
 
 
 # 安装 tmux  

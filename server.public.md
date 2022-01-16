@@ -1,5 +1,5 @@
 # hi
-# [server](readme.md)    
+# [server](home.md)    
 
 - 挑选并购买硬件
 - 组装并安置电脑

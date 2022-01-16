@@ -1,5 +1,5 @@
 
-# [vscode](readme.md)
+# [vscode](home.md)
 
 <a href="https://zhuanlan.zhihu.com/p/141205262" target="_blank">「效率」使用VScode连接远程服务器进行开发 - 知乎</a>  |
 

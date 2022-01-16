@@ -1,5 +1,5 @@
 # hi
-# [nvidia](readme.md)    
+# [nvidia](home.md)    
 
 ```
 禁用 开源显卡驱动 nouveau  
