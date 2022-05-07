@@ -1,7 +1,8 @@
-[公开笔记仓库](https://github.com/cyd1310997/md)
-[公开笔记](https://cyd1310997.github.io/md/#/home)
+[公开笔记](https://cyd1310997.github.io/md/#/home)  
+[公开笔记仓库](https://github.com/cyd1310997/md)  
 
-[ip代理.public](ip代理.public.md)
+[ip代理.public](ip代理.public.md)  
+
 [conda.public](conda.public.md)  
 [conda.pytorch.public](conda.pytorch.public.md)  
 [docker.public](docker.public.md)  
