@@ -15,13 +15,37 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      coverpage: true,
-      onlyCover: true,
-      name: '',
-      repo: ''
+      name: "note",// 文档标题，会显示在侧边栏顶部
+      repo: 'https://github.com/cyd1310997/md', // 右上角Github图标链接
+      homepage: "home.md",
+      loadNavbar: true,
+      auto2top: true,
+      maxLevel: 3,
+      subMaxLevel: 3,
+      markdown: {
+        breaks: true
+      },
+      plugins: [
+        function(hook, vm) {
+          hook.beforeEach(function(html) {
+            var link = '# [' + vm.route.file + '](' + vm.route.file + ')\n\n';
+            var editHtml = '[🏠 HOME](home.md)\n\n---\n\n';
+
+            return (
+              link +
+              editHtml +
+              html
+            );
+          });
+        }
+      ]
+      
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 6. Docsify Plugins -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>
