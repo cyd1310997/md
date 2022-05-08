@@ -1,6 +1,4 @@
 
-# ubuntu.network.public
-# [<-](home.md)  
 
 # 常用命令
 ```

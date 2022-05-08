@@ -1,8 +1,4 @@
 
-# docker.public    
-# [<-](home.md)  
-
-
 # 安装docker    
 <a href="https://docs.docker.com/engine/install/ubuntu/" target="_blank">Install Docker Engine on Ubuntu | Docker Documentation</a>  |  <br>  
 <a href="https://yeasy.gitbook.io/docker_practice/install/ubuntu" target="_blank">Ubuntu - Docker —— 从入门到实践</a>  |  <br>    
@@ -139,8 +135,8 @@ docker exec -it {container_name / container_id} /bin/bash
 ```  
 
 # ubuntu
-[ubuntu.public](ubuntu.public.md#ubuntu.public)
+[ubuntu](ubuntu.md#ubuntu)
 
 # 配置pytorch环境
-[conda.pytorch.public](conda.pytorch.public.md#conda.pytorch.public)
+[conda.pytorch](conda.pytorch.md#conda.pytorch)
 

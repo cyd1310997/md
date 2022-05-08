@@ -1,9 +1,6 @@
 
-# conda.pytorch.public
-# [<-](home.md)  
-
 # 安装 miniconda, conda pip 换源
-[conda.public](conda.public.md#conda.public)
+[conda](conda.md#conda)
 
 # 配置pytorch环境    
 

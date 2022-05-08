@@ -1,6 +1,4 @@
 
-# fzf.public    
-# [<-](home.md)  
 
 # github  
 <a href="https://github.com/junegunn/fzf" target="_blank">junegunn/fzf: A command-line fuzzy finder</a>  |  <br>    
@@ -25,7 +23,7 @@ cd fzf
 
 # 安装    
 ## apt安装法(ubuntu 20.04 换阿里源)    
-[ubuntu.public](ubuntu.public.md#ubuntu.public)    
+[ubuntu](ubuntu.md#ubuntu)    
 ```  
 sudo apt update  
 sudo apt install -y fzf  

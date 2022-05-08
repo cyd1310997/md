@@ -1,6 +1,4 @@
 
-# nvidia.public      
-# [<-](home.md)  
 
 ```
 禁用 开源显卡驱动 nouveau  
