@@ -1,7 +1,4 @@
-[公开笔记](https://cyd1310997.github.io/md/#/home)  
-[公开笔记仓库](https://github.com/cyd1310997/md)  
 
-[ip代理.public](ip代理.public.md)  
 
 [conda.public](conda.public.md)  
 [conda.pytorch.public](conda.pytorch.public.md)  
@@ -9,6 +6,7 @@
 [docsify.public](docsify.public.md)  
 [fzf.public](fzf.public.md)  
 [home](home.md)  
+[ip.public](ip.public.md)  
 [latex.public](latex.public.md)  
 [linux.public](linux.public.md)  
 [linux.user.public](linux.user.public.md)  
@@ -24,5 +22,3 @@
 [wsl.public](wsl.public.md)  
 [wt.public](wt.public.md)  
 [xshell.public](xshell.public.md)  
-
-
