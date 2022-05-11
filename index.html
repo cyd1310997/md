@@ -28,7 +28,7 @@
       plugins: [
         function(hook, vm) {
           hook.beforeEach(function(html) {
-            var link = '# [' + vm.route.file + '](' + vm.route.file + ')\n\n';
+            var link = '# [' + decodeURI(vm.route.file) + '](' + vm.route.file + ')\n\n';
             var editHtml = '[🏠 HOME](home.md) | [EDIT](https://github.dev/cyd1310997/md)\n\n---\n\n';
 
             return (
